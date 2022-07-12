@@ -12,6 +12,8 @@ Coded by www.creative-tim.com
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
+import React from "react";
+import emailjs from "@emailjs/browser";
 
 // @mui material components
 import Grid from "@mui/material/Grid";
@@ -21,6 +23,7 @@ import MKBox from "components/MKBox";
 import MKInput from "components/MKInput";
 import MKButton from "components/MKButton";
 import MKTypography from "components/MKTypography";
+import MKAlert from "components/MKAlert";
 
 // Material Kit 2 React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
@@ -31,14 +34,48 @@ import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Image
-import bgImage from "assets/images/city-profile.jpg";
+import bgImage from "assets/images/park-profile.jpg";
 
 function ContactUs() {
+  const [name, setName] = React.useState("");
+  const [email, setEmail] = React.useState("");
+  const [message, setMessage] = React.useState("");
+  const [alert, setalert] = React.useState(false);
+
+  function sendEmail() {
+    if (name && email && message) {
+      emailjs
+        .send(
+          "service_0bmg4vj",
+          "template_dtf0mro",
+          {
+            name,
+            email,
+            message,
+          },
+          "OPe_wxPtmE9yC7IHy"
+        )
+        .then(
+          (res) => {
+            console.log(res);
+          },
+          (error) => {
+            console.log(error);
+          }
+        );
+    } else {
+      setalert(true);
+      setTimeout(() => {
+        setalert(false);
+      }, "5000");
+    }
+  }
   return (
     <>
       <MKBox position="fixed" top="0.5rem" width="100%">
         <DefaultNavbar routes={routes} />
       </MKBox>
+      {alert ? <MKAlert color="error">Please fill in all the fields</MKAlert> : null}
       <Grid container spacing={3} alignItems="center">
         <Grid item xs={12} lg={6}>
           <MKBox
@@ -96,8 +133,12 @@ function ContactUs() {
                     <MKInput
                       variant="standard"
                       label="Full Name"
+                      onChange={(names) => {
+                        setName(names.target.value);
+                      }}
                       InputLabelProps={{ shrink: true }}
                       fullWidth
+                      required
                     />
                   </Grid>
                   <Grid item xs={12} md={6}>
@@ -105,8 +146,13 @@ function ContactUs() {
                       type="email"
                       variant="standard"
                       label="Email"
+                      value={email}
+                      onChange={(emails) => {
+                        setEmail(emails.target.value);
+                      }}
                       InputLabelProps={{ shrink: true }}
                       fullWidth
+                      required
                     />
                   </Grid>
                   <Grid item xs={12}>
@@ -117,12 +163,23 @@ function ContactUs() {
                       InputLabelProps={{ shrink: true }}
                       multiline
                       fullWidth
+                      value={message}
                       rows={6}
+                      onChange={(mess) => {
+                        setMessage(mess.target.value);
+                      }}
+                      required
                     />
                   </Grid>
                 </Grid>
                 <Grid container item justifyContent="center" xs={12} mt={5} mb={2}>
-                  <MKButton type="submit" variant="gradient" color="info">
+                  <MKButton
+                    variant="gradient"
+                    color="info"
+                    onClick={() => {
+                      sendEmail();
+                    }}
+                  >
                     Send Message
                   </MKButton>
                 </Grid>

@@ -18,8 +18,9 @@
     "npm": ">=6"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.6.2",
     "@emotion/cache": "11.4.0",
-    "@emotion/react": "11.4.1",
+    "@emotion/react": "*",
     "@emotion/styled": "11.3.0",
     "@mui/icons-material": "5.2.0",
     "@mui/material": "5.2.0",
@@ -27,6 +28,7 @@
     "@testing-library/jest-dom": "5.11.4",
     "@testing-library/react": "11.1.0",
     "@testing-library/user-event": "12.1.10",
+    "amplify": "^0.0.11",
     "chroma-js": "2.1.2",
     "flatpickr": "4.6.9",
     "prop-types": "15.7.2",

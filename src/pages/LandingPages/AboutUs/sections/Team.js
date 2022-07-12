@@ -54,7 +54,7 @@ function Team() {
                 image={team1}
                 name="Trung Peter Nguyen"
                 position={{ color: "info", label: "CEO & Founder" }}
-                description="Hi! My name is Peter Nguyen and I am a software developer based in Seattle,WA. I have worked at several Pacific Northwest based companies such as Columbia Bank and Shield Compliance. I also founded my own marketing company called 4N Productions where we help make videos, take pictures, and help with any web base needs for small businesses. "
+                description="Hi! My name is Peter Nguyen and I am a software developer based in Seattle, WA. I have worked at several Pacific Northwest based companies such as Columbia Bank and Shield Compliance. I also founded my own marketing company called 4N Productions where we help make videos, take pictures, and help with any web base needs for small businesses. "
               />
             </MKBox>
           </Grid>
@@ -64,7 +64,7 @@ function Team() {
                 image={team2}
                 name="Joseph Thuan Nguyen"
                 position={{ color: "info", label: "COO & Developer" }}
-                description="Artist is a term applied to a person who engages in an activity deemed to be an art."
+                description="Graduated from Aviation High School and Code Fellows. Seattle, WA born and raised. Technologies include Front-end, Python, and a multitude of Back-end Technologies."
               />
             </MKBox>
           </Grid>
