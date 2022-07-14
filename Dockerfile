@@ -3,6 +3,7 @@ FROM node:12.16.3-alpine as build
 WORKDIR /app
 COPY package.json ./
 RUN npm install
+RUN npm audit fix
 COPY . .
 RUN npm run build
 
