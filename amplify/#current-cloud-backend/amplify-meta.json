@@ -1,0 +1,15 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-parkspot-pro-104052-authRole",
+      "UnauthRoleArn": "arn:aws:iam::026359977279:role/amplify-parkspot-pro-104052-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::026359977279:role/amplify-parkspot-pro-104052-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-parkspot-pro-104052-deployment",
+      "UnauthRoleName": "amplify-parkspot-pro-104052-unauthRole",
+      "StackName": "amplify-parkspot-pro-104052",
+      "StackId": "arn:aws:cloudformation:us-east-1:026359977279:stack/amplify-parkspot-pro-104052/f9b52760-02d2-11ed-96ca-0acdf33b65cf",
+      "AmplifyAppId": "d34r2144yeoldi"
+    }
+  }
+}

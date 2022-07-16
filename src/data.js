@@ -1,0 +1,25 @@
+export const team = [
+  {
+    id: 1,
+    des: "Rapidiously develop user friendly growth strategies after extensive initiatives. Conveniently grow innovative benefits through fully tested deliverables. Rapidiously utilize focused platforms through end-to-end schemas",
+    img: "assets/img/team-1.jpg",
+    name: "Peter Nguyen",
+    title: "CEO/Founder",
+    skills: ["Front-End web development technologies", "Start-up Experience"],
+    phone: "+1-(206)-265-3633",
+    email: "nguyen@petertrung.com",
+    video: "",
+  },
+  {
+    id: 2,
+    des: "Rapidiously develop user friendly growth strategies after extensive initiatives. Conveniently grow innovative benefits through fully tested deliverables. Rapidiously utilize focused platforms through end-to-end schemas",
+    authImg: "assets/img/team-2.jpg",
+    authName: "Joseph Nguyen",
+    authTitle: "COO/Develper",
+    skills: ["Front-End web development technologies", "Start-up Experience"],
+    phone: "+1-(206)-265-3633",
+    email: "joesphnguyen2@gmail.com",
+    video: "",
+    conpanies: false,
+  },
+];
