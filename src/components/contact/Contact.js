@@ -85,14 +85,6 @@ export default function Contact({ bgColor }) {
               </div>
             ) : (
               <div className="col-md-7">
-                {/* <form
-                action="#"
-                id="contactForm"
-                className="contact-us-form"
-                onSubmit={() => {
-                  sendEmail();
-                }}
-              > */}
                 <h5>Reach us quickly</h5>
                 {alert ? (
                   <p className="form-message">Please fill all Fields</p>
@@ -162,7 +154,6 @@ export default function Contact({ bgColor }) {
                     </button>
                   </div>
                 </div>
-                {/* </form> */}
               </div>
             )}
           </div>
