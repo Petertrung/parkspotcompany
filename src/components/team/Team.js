@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Team({ hasTitle, bgColor }) {
   return (
@@ -30,27 +31,12 @@ export default function Team({ hasTitle, bgColor }) {
                     className="img-fluid rounded-circle"
                   />
                 </div>
-                <div className="team-info text-white rounded-circle d-flex flex-column align-items-center justify-content-center">
-                  <h5 className="mb-0">Peter Nguyen</h5>
-                  <h6>CEO/Founder</h6>
-                  <ul className="list-inline team-social social-icon mt-4 text-white">
-                    <li className="list-inline-item">
-                      <a href="#/">
-                        <span className="ti-youtube"></span>
-                      </a>
-                    </li>
-                    <li className="list-inline-item">
-                      <a href="#/">
-                        <span className="ti-twitter"></span>
-                      </a>
-                    </li>
-                    <li className="list-inline-item">
-                      <a href="#/">
-                        <span className="ti-github"></span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+                <Link to="/team-details/1">
+                  <div className="team-info text-white rounded-circle d-flex flex-column align-items-center justify-content-center">
+                    <h5 className="mb-0">Peter Nguyen</h5>
+                    <h6>CEO/Founder</h6>
+                  </div>
+                </Link>
               </div>
             </div>
             <div className="col-lg-3 col-sm-6">
@@ -62,27 +48,12 @@ export default function Team({ hasTitle, bgColor }) {
                     className="img-fluid rounded-circle"
                   />
                 </div>
-                <div className="team-info text-white rounded-circle d-flex flex-column align-items-center justify-content-center">
-                  <h5 className="mb-0">Joseph Nguyen</h5>
-                  <h6>COO/Develper</h6>
-                  <ul className="list-inline team-social social-icon mt-4 text-white">
-                    <li className="list-inline-item">
-                      <a href="#/">
-                        <span className="ti-facebook"></span>
-                      </a>
-                    </li>
-                    <li className="list-inline-item">
-                      <a href="#/">
-                        <span className="ti-instagram"></span>
-                      </a>
-                    </li>
-                    <li className="list-inline-item">
-                      <a href="#/">
-                        <span className="ti-github"></span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+                <Link to="/team-details/2">
+                  <div className="team-info text-white rounded-circle d-flex flex-column align-items-center justify-content-center">
+                    <h5 className="mb-0">Joseph Nguyen</h5>
+                    <h6>COO/Develper</h6>
+                  </div>
+                </Link>
               </div>
             </div>
           </div>

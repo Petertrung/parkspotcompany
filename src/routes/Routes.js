@@ -14,7 +14,7 @@ const AppRoutes = () => {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/team-details" element={<TeamDetails />} />
+        <Route path="/team-details/:userId" element={<TeamDetails />} />
         <Route path="/thank-you" element={<ThankYou />} />
         <Route path="/coming-soon" element={<ComingSoon />} />
         <Route path="/faq" element={<Faq />} />

@@ -5,30 +5,35 @@ export default function Contact({ bgColor }) {
   const [name, setName] = React.useState("");
   const [email, setEmail] = React.useState("");
   const [message, setMessage] = React.useState("");
+  const [alert, setalert] = React.useState(false);
+  const [sent, setSent] = React.useState(false);
 
   const sendEmail = async () => {
-    try {
-      emailjs
-        .send(
-          "service_0bmg4vj",
-          "template_dtf0mro",
-          {
-            name,
-            email,
-            message,
-          },
-          "OPe_wxPtmE9yC7IHy"
-        )
-        .then(
-          (res) => {
+    if (name && email && message) {
+      try {
+        emailjs
+          .send(
+            "service_0bmg4vj",
+            "template_dtf0mro",
+            {
+              name,
+              email,
+              message,
+            },
+            "OPe_wxPtmE9yC7IHy"
+          )
+          .then((res) => {
+            setSent(true);
             console.log(res);
-          },
-          (error) => {
-            console.log(error);
-          }
-        );
-    } catch (error) {
-      console.error(error);
+          });
+      } catch (error) {
+        console.error(error);
+      }
+    } else {
+      setalert(true);
+      setTimeout(() => {
+        setalert(false);
+      }, "5000");
     }
   };
 
@@ -72,16 +77,26 @@ export default function Contact({ bgColor }) {
                 </ul>
               </div>
             </div>
-            <div className="col-md-7">
-              <form
+            {sent ? (
+              <div className="col-md-7 text-center">
+                <h2>
+                  Sent <span className="ti-check"></span>
+                </h2>
+              </div>
+            ) : (
+              <div className="col-md-7">
+                {/* <form
                 action="#"
                 id="contactForm"
                 className="contact-us-form"
                 onSubmit={() => {
                   sendEmail();
                 }}
-              >
+              > */}
                 <h5>Reach us quickly</h5>
+                {alert ? (
+                  <p className="form-message">Please fill all Fields</p>
+                ) : null}
                 <div className="row">
                   <div className="col-sm-12 col-12">
                     <div className="form-group">
@@ -93,7 +108,7 @@ export default function Contact({ bgColor }) {
                         placeholder="Enter full name"
                         required="required"
                         onChange={(text) => {
-                          setName(text);
+                          setName(text.target.value);
                         }}
                       />
                     </div>
@@ -110,7 +125,7 @@ export default function Contact({ bgColor }) {
                         id="email"
                         placeholder="Enter Email"
                         onChange={(text) => {
-                          setEmail(text);
+                          setEmail(text.target.value);
                         }}
                       />
                     </div>
@@ -127,7 +142,7 @@ export default function Contact({ bgColor }) {
                         cols="25"
                         placeholder="Message"
                         onChange={(text) => {
-                          setMessage(text);
+                          setMessage(text.target.value);
                         }}
                       ></textarea>
                     </div>
@@ -139,14 +154,17 @@ export default function Contact({ bgColor }) {
                       type="submit"
                       className="btn solid-btn"
                       id="btnContactUs"
+                      onClick={() => {
+                        sendEmail();
+                      }}
                     >
                       Send Message
                     </button>
                   </div>
                 </div>
-              </form>
-              <p className="form-message"></p>
-            </div>
+                {/* </form> */}
+              </div>
+            )}
           </div>
         </div>
       </section>

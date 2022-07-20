@@ -54,7 +54,7 @@ export default function Screenshot({ hasBg }) {
             </div>
           </div>
           <div className="screen-slider-content mt-5">
-            <div className="screenshot-frame"></div>
+            {/* <div className="screenshot-frame"></div> */}
             <OwlCarousel
               className="screen-carousel owl-carousel owl-theme dot-indicator"
               {...options}
