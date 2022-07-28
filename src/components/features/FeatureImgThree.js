@@ -41,7 +41,7 @@ export default function FeatureImgThree() {
                         href="#tab6-2"
                         data-toggle="tab"
                       >
-                        <span className="ti-vector"></span>
+                        <span className="ti-desktop"></span>
                         Development
                       </a>
                     </li>
@@ -51,7 +51,7 @@ export default function FeatureImgThree() {
                         href="#tab6-3"
                         data-toggle="tab"
                       >
-                        <span className="ti-bar-chart"></span>
+                        <span className="ti-harddrives"></span>
                         Database
                       </a>
                     </li>
@@ -102,7 +102,7 @@ export default function FeatureImgThree() {
                     <div className="tab-pane" id="tab6-2">
                       <div className="single-feature">
                         <div className="d-flex align-items-center mb-2">
-                          <span className="ti-microphone rounded mr-3 icon icon-color-1"></span>
+                          <span className="ti-loop rounded mr-3 icon icon-color-1"></span>
                           <h5 className="mb-0">Continuous Updates</h5>
                         </div>
                         <p>
@@ -113,7 +113,7 @@ export default function FeatureImgThree() {
                       </div>
                       <div className="single-feature mb-4">
                         <div className="d-flex align-items-center mb-2">
-                          <span className="ti-alarm-clock rounded mr-3 icon icon-color-2"></span>
+                          <span className="ti-layers rounded mr-3 icon icon-color-2"></span>
                           <h5 className="mb-0">New Features</h5>
                         </div>
                         <p>
@@ -126,7 +126,7 @@ export default function FeatureImgThree() {
                       <div className="row">
                         <div className="col single-feature mb-4">
                           <div className="d-flex align-items-center mb-2">
-                            <span className="ti-bar-chart rounded mr-3 icon icon-color-2"></span>
+                            <span className="ti-stats-up rounded mr-3 icon icon-color-2"></span>
                             <h5 className="mb-0">Growth </h5>
                           </div>
                           <p>
@@ -136,7 +136,7 @@ export default function FeatureImgThree() {
                         </div>
                         <div className="col single-feature mb-4">
                           <div className="d-flex align-items-center mb-2">
-                            <span className="ti-stats-up rounded mr-3 icon icon-color-3"></span>
+                            <span className="ti-lock rounded mr-3 icon icon-color-3"></span>
                             <h5 className="mb-0">Secure & Dependability</h5>
                           </div>
                           <p>

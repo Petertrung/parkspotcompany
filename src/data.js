@@ -8,7 +8,7 @@ export const teams = [
     skills: ["Front-End web development technologies", "Start-up Experience"],
     phone: "+1 (206)-265-3633",
     email: "nguyen@petertrung.com",
-    video: "9No-FiEInLA",
+    video: "2fslRpS_E4k",
     socials: [
       {
         icon: "ti-linkedin",

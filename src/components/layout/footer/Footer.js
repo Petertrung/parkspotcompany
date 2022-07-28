@@ -31,20 +31,16 @@ export default function Footer({ space }) {
                     <div className="footer-nav-wrap text-white">
                       <h5 className="mb-3 text-white">Resources</h5>
                       <ul className="list-unstyled">
-                        <li className="mb-2">
+                        {/* <li className="mb-2">
                           <a href="#/">Help</a>
                         </li>
                         <li className="mb-2">
                           <a href="#/">Events</a>
-                        </li>
+                        </li> */}
                         <li className="mb-2">
-                          <a href="#/">Live Support</a>
-                        </li>
-                        <li className="mb-2">
-                          <a href="#/">Open Sources</a>
-                        </li>
-                        <li className="mb-2">
-                          <a href="#/">Documentation</a>
+                          <a href="https://github.com/Petertrung">
+                            Documentation
+                          </a>
                         </li>
                       </ul>
                     </div>
@@ -56,15 +52,9 @@ export default function Footer({ space }) {
                         <li className="mb-2">
                           <a href="#about">About Us</a>
                         </li>
-                        <li className="mb-2">
+                        {/* <li className="mb-2">
                           <a href="#/">Careers</a>
-                        </li>
-                        <li className="mb-2">
-                          <a href="#/">Customers</a>
-                        </li>
-                        <li className="mb-2">
-                          <a href="#/">Community</a>
-                        </li>
+                        </li> */}
                         <li className="mb-2">
                           <a href="#team">Our Team</a>
                         </li>
@@ -88,7 +78,10 @@ export default function Footer({ space }) {
                         </li>
                         <li className="mb-2 d-flex align-items-center">
                           <span className="ti-world mr-2"></span>
-                          <a href="#/"> www.petertrung.com</a>
+                          <a href="https://www.petertrung.com">
+                            {" "}
+                            www.petertrung.com
+                          </a>
                         </li>
                       </ul>
                     </div>

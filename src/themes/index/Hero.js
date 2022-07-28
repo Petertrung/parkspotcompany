@@ -17,7 +17,7 @@ export default function Hero() {
           <div className="row align-items-center justify-content-between">
             <div className="col-md-6 col-lg-6">
               <div className="hero-content-left ptb-100 text-white">
-                <h1 className="text-white font-weight-bold">ParkSpot</h1>
+                <h1 className="text-white font-weight-bold">Park Spot</h1>
                 <p className="lead">
                   Make the reservation process easier. Add more options and
                   devices to rent from.
