@@ -68,7 +68,7 @@ export default function Contact({ bgColor }) {
                   </li>
                   <li>
                     <span>
-                      Email :
+                      Email: &nbsp;
                       <a href="mailto:nguyen@petertrung.com">
                         nguyen@petertrung.com
                       </a>

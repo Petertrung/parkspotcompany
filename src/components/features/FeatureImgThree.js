@@ -9,7 +9,7 @@ export default function FeatureImgThree() {
             <div className="col-md-4">
               <div className="download-img">
                 <img
-                  src="assets/img/image-10.png"
+                  src="assets/img/mainscreen.png"
                   alt="download"
                   className="img-fluid"
                 />
@@ -17,7 +17,7 @@ export default function FeatureImgThree() {
             </div>
             <div className="col-md-7">
               <div className="feature-contents section-heading">
-                <h2>Easy Process with Best Features</h2>
+                <h2>Simple Process with Features</h2>
                 <p>
                   Deliver the best User Experience for both you and your
                   customers.

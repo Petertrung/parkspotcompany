@@ -19,8 +19,9 @@ export default function Hero() {
               <div className="hero-content-left ptb-100 text-white">
                 <h1 className="text-white font-weight-bold">Park Spot</h1>
                 <p className="lead">
-                  Make the reservation process easier. Add more options and
-                  devices to rent from.
+                  Park Spot is an application that allows you to rent park
+                  spaces for your next activity or event. Make the reservation
+                  process easier. Add more options and devices to rent from.
                 </p>
 
                 <a href="#contact" className="btn app-store-btn">
